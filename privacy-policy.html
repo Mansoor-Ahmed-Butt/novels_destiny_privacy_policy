@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Novels Destiny</title>
+  <meta name="description" content="Official Privacy Policy for Novels Destiny - A digital novel reading and publishing platform. Understand how we collect, protect, and handle your data.">
+  <meta name="author" content="Novels Destiny">
+  <meta name="robots" content="index, follow">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Warm Literary Color Palette (Light Theme) */
+      --bg-page: #FAF7F2;
+      --bg-surface: #FFFFFF;
+      --bg-surface-soft: #F4EFE6;
+      --bg-surface-hover: #ECE4D4;
+      --border-subtle: #E8DEC9;
+      --border-strong: #D5C7AF;
+
+      --brand-primary: #342217;
+      --brand-primary-light: #533B2E;
+      --brand-accent: #C47B49;
+      --brand-accent-hover: #AF6837;
+      --brand-accent-soft: #F9EFE7;
+      --brand-gold: #D49A3D;
+
+      --text-main: #2C2018;
+      --text-muted: #6E6053;
+      --text-subtle: #998C7F;
+      --text-inverse: #FAF7F2;
+
+      --badge-green-bg: #E4EFE7;
+      --badge-green-text: #28633F;
+      --badge-amber-bg: #FBF2DE;
+      --badge-amber-text: #8F5B12;
+      --badge-blue-bg: #E6EFF6;
+      --badge-blue-text: #24587E;
+
+      --shadow-sm: 0 2px 6px rgba(44, 32, 24, 0.04);
+      --shadow-md: 0 8px 24px rgba(44, 32, 24, 0.07);
+      --shadow-lg: 0 16px 40px rgba(44, 32, 24, 0.1);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-pill: 9999px;
+
+      --font-heading: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    [data-theme="dark"] {
+      /* Midnight Espresso Palette (Dark Theme) */
+      --bg-page: #130E0A;
+      --bg-surface: #1E1712;
+      --bg-surface-soft: #271F19;
+      --bg-surface-hover: #332921;
+      --border-subtle: #3A2F26;
+      --border-strong: #4F4034;
+
+      --brand-primary: #FAF7F2;
+      --brand-primary-light: #E7DFD4;
+      --brand-accent: #E08A54;
+      --brand-accent-hover: #F09A64;
+      --brand-accent-soft: #2D1E16;
+      --brand-gold: #E5AE53;
+
+      --text-main: #F3ECE2;
+      --text-muted: #B6A799;
+      --text-subtle: #7F7367;
+      --text-inverse: #130E0A;
+
+      --badge-green-bg: #1B2F23;
+      --badge-green-text: #69C08D;
+      --badge-amber-bg: #302613;
+      --badge-amber-text: #E5AE53;
+      --badge-blue-bg: #162635;
+      --badge-blue-text: #73B5E6;
+
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+      --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient background ornamentation */
+    .ambient-glow {
+      position: fixed;
+      top: -120px;
+      right: -80px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(196, 123, 73, 0.12) 0%, rgba(196, 123, 73, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ambient-glow-2 {
+      position: fixed;
+      bottom: -150px;
+      left: -100px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(212, 154, 61, 0.08) 0%, rgba(212, 154, 61, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Header & Navigation Bar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background-color: rgba(250, 247, 242, 0.88);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    [data-theme="dark"] .navbar {
+      background-color: rgba(19, 14, 10, 0.88);
+    }
+
+    .nav-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, #342217, #C47B49);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FAF7F2;
+      box-shadow: 0 4px 12px rgba(196, 123, 73, 0.25);
+    }
+
+    .brand-text h1 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1.1;
+      color: var(--brand-primary);
+    }
+
+    .brand-text span {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brand-accent);
+      font-weight: 600;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-surface-hover);
+      border-color: var(--border-strong);
+      transform: translateY(-1px);
+    }
+
+    .nav-btn.primary {
+      background: var(--brand-accent);
+      color: #FFFFFF;
+      border-color: var(--brand-accent);
+    }
+
+    .nav-btn.primary:hover {
+      background: var(--brand-accent-hover);
+      border-color: var(--brand-accent-hover);
+    }
+
+    .theme-toggle-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .theme-toggle-btn:hover {
+      background: var(--bg-surface-hover);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      z-index: 1;
+      max-width: 1240px;
+      margin: 2rem auto 2.5rem;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.9rem;
+      background: var(--brand-accent-soft);
+      color: var(--brand-accent);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--brand-primary);
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, var(--brand-accent), var(--brand-gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .hero-metadata {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      font-size: 0.875rem;
+      color: var(--text-subtle);
+    }
+
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Quick Highlight Cards (At a glance) */
+    .glance-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      max-width: 1240px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .glance-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .glance-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-strong);
+    }
+
+    .glance-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .glance-card.green .glance-icon-box { background: var(--badge-green-bg); color: var(--badge-green-text); }
+    .glance-card.amber .glance-icon-box { background: var(--badge-amber-bg); color: var(--badge-amber-text); }
+    .glance-card.blue .glance-icon-box { background: var(--badge-blue-bg); color: var(--badge-blue-text); }
+    .glance-card.terracotta .glance-icon-box { background: var(--brand-accent-soft); color: var(--brand-accent); }
+
+    .glance-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--brand-primary);
+    }
+
+    .glance-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* Search & Filter Bar */
+    .search-section {
+      max-width: 1240px;
+      margin: 0 auto 2.5rem;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .search-wrapper {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-pill);
+      padding: 0.6rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .search-wrapper:focus-within {
+      border-color: var(--brand-accent);
+      box-shadow: 0 0 0 3px rgba(196, 123, 73, 0.15);
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .search-input::placeholder {
+      color: var(--text-subtle);
+    }
+
+    .search-chips {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .chip-label {
+      font-size: 0.78rem;
+      color: var(--text-subtle);
+      font-weight: 600;
+    }
+
+    .chip {
+      background: var(--bg-surface-soft);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .chip:hover {
+      background: var(--brand-accent-soft);
+      color: var(--brand-accent);
+      border-color: var(--brand-accent);
+    }
+
+    /* Main Content Layout with Sidebar */
+    .policy-container {
+      max-width: 1240px;
+      margin: 0 auto 5rem;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 2.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Sticky Sidebar Navigation */
+    .sidebar {
+      position: sticky;
+      top: 5.5rem;
+      align-self: start;
+      max-height: calc(100vh - 7rem);
+      overflow-y: auto;
+      padding-right: 0.75rem;
+    }
+
+    .sidebar::-webkit-scrollbar {
+      width: 4px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background: var(--border-strong);
+      border-radius: 4px;
+    }
+
+    .toc-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .toc-title {
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--brand-accent);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .toc-link {
+      display: block;
+      padding: 0.45rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      line-height: 1.4;
+    }
+
+    .toc-link:hover, .toc-link.active {
+      color: var(--brand-accent);
+      background: var(--brand-accent-soft);
+      font-weight: 600;
+      transform: translateX(4px);
+    }
+
+    .sidebar-banner {
+      margin-top: 1.25rem;
+      background: linear-gradient(135deg, rgba(196, 123, 73, 0.1), rgba(212, 154, 61, 0.15));
+      border: 1px dashed var(--brand-accent);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .sidebar-banner h4 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--brand-primary);
+      margin-bottom: 0.4rem;
+    }
+
+    .sidebar-banner p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .sidebar-banner a {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--brand-accent);
+      text-decoration: none;
+    }
+    .sidebar-banner a:hover {
+      text-decoration: underline;
+    }
+
+    /* Policy Main Article */
+    .policy-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .section-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      scroll-margin-top: 5.5rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .section-card:hover {
+      border-color: var(--border-strong);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-number {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-pill);
+      background: var(--brand-accent-soft);
+      color: var(--brand-accent);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 1.38rem;
+      font-weight: 700;
+      color: var(--brand-primary);
+      letter-spacing: 0.02em;
+    }
+
+    .section-body {
+      color: var(--text-main);
+      font-size: 0.98rem;
+    }
+
+    .section-body p {
+      margin-bottom: 1rem;
+    }
+
+    .section-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-body ul {
+      margin: 0.75rem 0 1.25rem 1.5rem;
+    }
+
+    .section-body li {
+      margin-bottom: 0.5rem;
+      color: var(--text-muted);
+    }
+
+    .section-body strong {
+      color: var(--brand-primary);
+      font-weight: 600;
+    }
+
+    /* Special Highlight Box */
+    .callout {
+      border-radius: var(--radius-md);
+      padding: 1.15rem 1.35rem;
+      margin: 1.25rem 0;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      border-left: 4px solid transparent;
+    }
+
+    .callout.info {
+      background: var(--badge-blue-bg);
+      border-left-color: var(--badge-blue-text);
+      color: var(--badge-blue-text);
+    }
+
+    .callout.warning {
+      background: var(--badge-amber-bg);
+      border-left-color: var(--badge-amber-text);
+      color: var(--badge-amber-text);
+    }
+
+    .callout.success {
+      background: var(--badge-green-bg);
+      border-left-color: var(--badge-green-text);
+      color: var(--badge-green-text);
+    }
+
+    .callout-icon {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .callout-text h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .callout-text p {
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin: 0 !important;
+    }
+
+    /* Data Table Styling */
+    .data-table-wrapper {
+      overflow-x: auto;
+      margin: 1.25rem 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .data-table th {
+      background: var(--bg-surface-soft);
+      padding: 0.85rem 1rem;
+      font-weight: 700;
+      color: var(--brand-primary);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .data-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+    }
+
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .badge-pill {
+      display: inline-block;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-pill.required { background: var(--badge-amber-bg); color: var(--badge-amber-text); }
+    .badge-pill.optional { background: var(--badge-green-bg); color: var(--badge-green-text); }
+    .badge-pill.automated { background: var(--badge-blue-bg); color: var(--badge-blue-text); }
+
+    /* Footer */
+    .footer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      padding: 3.5rem 1.5rem 2.5rem;
+      margin-top: 4rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand h2 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      color: var(--brand-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      max-width: 440px;
+      line-height: 1.6;
+    }
+
+    .footer-col h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--brand-accent);
+      margin-bottom: 1.1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .footer-col a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-col a:hover {
+      color: var(--brand-accent);
+    }
+
+    .footer-bottom {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-subtle);
+    }
+
+    /* Print styles */
+    @media print {
+      .navbar, .sidebar, .search-section, .theme-toggle-btn, .ambient-glow, .ambient-glow-2, .footer-col {
+        display: none !important;
+      }
+      body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+      }
+      .policy-container {
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .section-card {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 1rem 0 !important;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .policy-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .sidebar {
+        display: none; /* Can be opened via floating drawer or header */
+      }
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav-container {
+        padding: 0.75rem 1rem;
+      }
+      .nav-btn.text-only {
+        display: none;
+      }
+      .section-card {
+        padding: 1.35rem;
+      }
+      .hero-title {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+</head>
+<body data-theme="light">
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Top Sticky Navigation -->
+  <nav class="navbar" id="topNav">
+    <div class="nav-container">
+      <a href="privacy-policy.html" class="brand-link" aria-label="Novels Destiny Home">
+        <div class="brand-icon">
+          <!-- Feather Book Icon SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            <path d="M9 7h6"></path>
+            <path d="M9 11h4"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Novels Destiny</h1>
+          <span>Legal & Privacy Center</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <!-- Link to Account Deletion Policy Page -->
+        <a href="delete-account.html" class="nav-btn primary" title="Delete Account & Data Removal Request">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            <line x1="10" y1="11" x2="10" y2="17"></line>
+            <line x1="14" y1="11" x2="14" y2="17"></line>
+          </svg>
+          <span>Delete Account</span>
+        </a>
+
+        <!-- Print / PDF Button -->
+        <button class="nav-btn text-only" onclick="window.print()" title="Print this Policy">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark Mode" title="Toggle theme">
+          <svg id="moonIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sunIcon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="hero-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+      </svg>
+      Google Play Store Certified Policy
+    </div>
+    <h2 class="hero-title">Privacy Policy for <span>Novels Destiny</span></h2>
+    <p class="hero-subtitle">
+      At <strong>Novels Destiny</strong>, your trust and privacy are paramount. This policy outlines transparently how we collect, handle, protect, and respect your personal information when using our Android mobile application and connected digital services.
+    </p>
+
+    <div class="hero-metadata">
+      <div class="meta-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span>Effective Date: <strong>October 18, 2026</strong></span>
+      </div>
+      <div class="meta-item">•</div>
+      <div class="meta-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        <span>Publisher: <strong>Mansoor Ahmed Butt</strong></span>
+      </div>
+      <div class="meta-item">•</div>
+      <div class="meta-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        <span>Contact: <strong>novelsdestinyadmin@gmail.com</strong></span>
+      </div>
+      <div class="meta-item">•</div>
+      <div class="meta-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+        <span>App ID: <code>com.example.novelsdestiny</code></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- At a glance summary grid -->
+  <section class="glance-grid" aria-label="Privacy at a Glance">
+    <div class="glance-card green">
+      <div class="glance-icon-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 12 11 14 15 10"></polyline>
+        </svg>
+      </div>
+      <h3>Zero Data Selling</h3>
+      <p>We do not sell, rent, or trade your personal data, reading logs, or private book drafts to third-party data brokers under any circumstances.</p>
+    </div>
+
+    <div class="glance-card amber">
+      <div class="glance-icon-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+          <line x1="12" y1="19" x2="12" y2="23"></line>
+          <line x1="8" y1="23" x2="16" y2="23"></line>
+        </svg>
+      </div>
+      <h3>Strict Audio Privacy</h3>
+      <p>Microphone access is exclusively used in real-time for writer speech-to-text voice dictation. Voice data is never recorded, stored, or sent to external audio servers.</p>
+    </div>
+
+    <div class="glance-card blue">
+      <div class="glance-icon-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+      </div>
+      <h3>Enterprise Cloud Security</h3>
+      <p>All user authentication, database records, and uploaded manuscripts are encrypted in transit (TLS 1.3) via Google Firebase and Supabase Cloud Storage.</p>
+    </div>
+
+    <div class="glance-card terracotta">
+      <div class="glance-icon-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+          <polyline points="17 21 17 13 7 13 7 21"></polyline>
+          <polyline points="7 3 7 8 15 8"></polyline>
+        </svg>
+      </div>
+      <h3>Your Right to Delete</h3>
+      <p>You have full autonomy over your account. Delete your profile, reading history, and personal data anytime directly in-app or via our verified web deletion portal.</p>
+    </div>
+  </section>
+
+  <!-- Interactive Search & Filter Bar -->
+  <div class="search-section">
+    <div class="search-wrapper">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="policySearchInput" class="search-input" placeholder="Search this privacy policy (e.g., 'microphone', 'AdMob', 'delete', 'cookies', 'children')...">
+    </div>
+    <div class="search-chips">
+      <span class="chip-label">Quick topics:</span>
+      <button class="chip" onclick="quickFilter('Account & Authentication')">Account Data</button>
+      <button class="chip" onclick="quickFilter('Microphone')">Microphone & Audio</button>
+      <button class="chip" onclick="quickFilter('Google AdMob')">AdMob Ads</button>
+      <button class="chip" onclick="quickFilter('Supabase')">PDF & Storage</button>
+      <button class="chip" onclick="quickFilter('Children')">Children's Privacy</button>
+      <button class="chip" onclick="quickFilter('Delete')">Account Deletion</button>
+    </div>
+  </div>
+
+  <!-- Main Grid Layout -->
+  <main class="policy-container">
+    <!-- Sticky Sidebar Table of Contents -->
+    <aside class="sidebar" aria-label="Table of Contents">
+      <div class="toc-card">
+        <div class="toc-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+          Policy Navigation
+        </div>
+        <ul class="toc-list" id="tocList">
+          <li><a href="#section-1" class="toc-link">1. Overview & Platform Scope</a></li>
+          <li><a href="#section-2" class="toc-link">2. Information We Collect</a></li>
+          <li><a href="#section-3" class="toc-link">3. Microphone & Audio Policy</a></li>
+          <li><a href="#section-4" class="toc-link">4. How We Use Collected Data</a></li>
+          <li><a href="#section-5" class="toc-link">5. Third-Party Cloud Services & SDKs</a></li>
+          <li><a href="#section-6" class="toc-link">6. Advertising Policy (Google AdMob)</a></li>
+          <li><a href="#section-7" class="toc-link">7. Push Notifications & Messaging</a></li>
+          <li><a href="#section-8" class="toc-link">8. PDF Manuscripts & Cover Images</a></li>
+          <li><a href="#section-9" class="toc-link">9. Data Security & Storage Practices</a></li>
+          <li><a href="#section-10" class="toc-link">10. Account & Data Deletion</a></li>
+          <li><a href="#section-11" class="toc-link">11. Children's Online Privacy (COPPA)</a></li>
+          <li><a href="#section-12" class="toc-link">12. GDPR & CCPA/CPRA Privacy Rights</a></li>
+          <li><a href="#section-13" class="toc-link">13. Policy Updates & Inquiries</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-banner">
+        <h4>Need to delete your account?</h4>
+        <p>Google Play requires quick, transparent account deletion. Use our dedicated portal.</p>
+        <a href="delete-account.html">Open Deletion Portal &rarr;</a>
+      </div>
+    </aside>
+
+    <!-- Policy Articles / Sections -->
+    <article class="policy-content" id="policyArticles">
+      <!-- Section 1 -->
+      <section class="section-card" id="section-1">
+        <div class="section-header">
+          <div class="section-number">01</div>
+          <h2 class="section-title">Overview & Platform Scope</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Welcome to <strong>Novels Destiny</strong> ("we", "our", or "us"). Novels Destiny is a state-of-the-art mobile application designed to connect readers with captivating digital literature and empower authors to write, format, dictate, and publish rich multi-chapter stories and PDF manuscripts.
+          </p>
+          <p>
+            This Privacy Policy governs your access to and use of the Novels Destiny application across supported mobile devices (including Android smartphones and tablets) and associated backend infrastructure. By downloading, accessing, or creating an account within Novels Destiny, you acknowledge that you have read, understood, and consented to the practices described in this document.
+          </p>
+          <p>
+            If you do not agree with this policy in whole or in part, you should discontinue using the app immediately and may request the permanent removal of your account and associated records as detailed in <a href="#section-10" style="color:var(--brand-accent); font-weight:600;">Section 10</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section-card" id="section-2">
+        <div class="section-header">
+          <div class="section-number">02</div>
+          <h2 class="section-title">Information We Collect</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            To deliver an immersive reading experience, synchronize reading progress across devices, and allow registered authors to manage their creative work, we collect the following categories of information:
+          </p>
+
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Data Elements Collected</th>
+                  <th>Collection Method</th>
+                  <th>Requirement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Account Identity</strong></td>
+                  <td>Display Name, Email Address, Profile Picture (Avatar), Author/Reader Biography, User Role (Reader, Writer, Administrator).</td>
+                  <td>Provided during registration or Google Sign-In.</td>
+                  <td><span class="badge-pill required">Mandatory for Auth</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Reading Habits & Progress</strong></td>
+                  <td>Reading history, chapter progression (page/scroll position), bookmarked novels, favorite titles, library shelves.</td>
+                  <td>Automatically recorded as you read in the app.</td>
+                  <td><span class="badge-pill automated">Automated</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Author Manuscripts & Content</strong></td>
+                  <td>Novel titles, synopsis, genres, episode drafts, chapter body text, uploaded book cover artwork, and attached PDF reading files.</td>
+                  <td>Uploaded by authors via Novel & Episode Editors.</td>
+                  <td><span class="badge-pill optional">Writer Role Only</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Device & Technical Diagnostics</strong></td>
+                  <td>Device model, operating system version, unique device tokens, app version, network connectivity status, crash reports.</td>
+                  <td>Collected via Firebase & Android operating system.</td>
+                  <td><span class="badge-pill automated">Automated</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Advertising Identifiers</strong></td>
+                  <td>Google Advertising ID (GAID), ad engagement events (impressions, clicks).</td>
+                  <td>Collected via Google Mobile Ads SDK (AdMob).</td>
+                  <td><span class="badge-pill automated">Ad-Supported</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout info">
+            <div class="callout-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            </div>
+            <div class="callout-text">
+              <h4>Guest Readers</h4>
+              <p>You can browse public novel summaries and explore trending titles without an account. However, creating an account is required to sync bookmarks, write reviews, publish stories, and resume chapter progress seamlessly across devices.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section-card" id="section-3">
+        <div class="section-header">
+          <div class="section-number">03</div>
+          <h2 class="section-title">Microphone & Audio Policy (Sensitive Permission)</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Novels Destiny requests the <code>android.permission.RECORD_AUDIO</code> permission in strict compliance with the Google Play Store's sensitive permissions guidelines.
+          </p>
+
+          <div class="callout success">
+            <div class="callout-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+            </div>
+            <div class="callout-text">
+              <h4>How We Handle Your Microphone Audio:</h4>
+              <p>
+                <strong>Sole Purpose:</strong> Microphone access is utilized exclusively for real-time <strong>Speech-to-Text (Voice Dictation)</strong>, allowing authors to draft novel chapters hands-free and readers to conduct voice-based novel searches.<br>
+                <strong>Zero Audio Storage:</strong> Audio input is converted to text instantly using the on-device speech recognizer. Raw audio streams are <strong>never stored</strong>, never cached on disk, and <strong>never transmitted</strong> to our databases or third-party servers.<br>
+                <strong>Explicit Consent:</strong> The microphone is only activated when you intentionally tap the dictation/microphone button, accompanied by standard Android OS permission prompts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section-card" id="section-4">
+        <div class="section-header">
+          <div class="section-number">04</div>
+          <h2 class="section-title">How We Use Collected Data</h2>
+        </div>
+        <div class="section-body">
+          <p>We process the personal information we collect for the following legitimate business and service purposes:</p>
+          <ul>
+            <li><strong>Service Delivery:</strong> To display chapter contents, remember your reading font and theme choices, render uploaded PDFs, and synchronize reading positions.</li>
+            <li><strong>Creator Platform Management:</strong> To review, verify, and publish author novels and chapter updates under our creator guidelines.</li>
+            <li><strong>Account Security:</strong> To authenticate your identity via Firebase Authentication or Google Sign-In and protect against fraud and unauthorized account takeover.</li>
+            <li><strong>Notifications:</strong> To inform you of newly published episodes from your followed authors, admin approval updates for writers, and critical system announcements.</li>
+            <li><strong>Ad Serving:</strong> To serve banner and interstitial ads through Google AdMob, which keeps the vast majority of our novel catalog free for readers worldwide.</li>
+            <li><strong>Performance Optimization:</strong> To detect app crashes, measure screen load latencies, and debug technical anomalies.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="section-card" id="section-5">
+        <div class="section-header">
+          <div class="section-number">05</div>
+          <h2 class="section-title">Third-Party Cloud Services & SDKs</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            To deliver enterprise-grade performance, scalability, and security, Novels Destiny integrates select verified third-party Software Development Kits (SDKs). These third parties adhere to rigorous data protection standards and process data solely on our behalf:
+          </p>
+
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Provider & Service</th>
+                  <th>Purpose</th>
+                  <th>Privacy Reference</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Google Firebase</strong> (Auth, Firestore, Messaging)</td>
+                  <td>User authentication, cloud database storage for user profiles and novel metadata, and push notifications.</td>
+                  <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener" style="color:var(--brand-accent);">Firebase Privacy</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Supabase Cloud</strong></td>
+                  <td>Secure cloud object storage for high-resolution novel cover images and author-uploaded PDF chapter manuscripts.</td>
+                  <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener" style="color:var(--brand-accent);">Supabase Privacy</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Google Mobile Ads (AdMob)</strong></td>
+                  <td>Monetization through personalized and non-personalized banner and interstitial advertisements.</td>
+                  <td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color:var(--brand-accent);">Google Ads Policy</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Google Play Services</strong></td>
+                  <td>App update verification, Google Sign-In SDK, and Android core system integration.</td>
+                  <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--brand-accent);">Google Privacy</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Google Fonts</strong></td>
+                  <td>Rendering elegant typography for immersive novel reading and reader interfaces.</td>
+                  <td><a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener" style="color:var(--brand-accent);">Google Fonts FAQ</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="section-card" id="section-6">
+        <div class="section-header">
+          <div class="section-number">06</div>
+          <h2 class="section-title">Advertising Policy (Google AdMob)</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Novels Destiny displays advertisements powered by <strong>Google Mobile Ads (AdMob)</strong>. Depending on your device settings and location (such as European Economic Area or California), AdMob may collect and process device identifiers (including the Google Advertising ID) and approximate location to provide personalized or contextual advertisements.
+          </p>
+          <div class="callout warning">
+            <div class="callout-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            </div>
+            <div class="callout-text">
+              <h4>Opting Out of Personalized Advertising</h4>
+              <p>
+                You can reset your Advertising ID or opt out of personalized ads at any time through your Android device settings:<br>
+                <code>Settings &rarr; Google &rarr; Ads &rarr; Reset advertising ID</code> or toggle <code>Delete advertising ID</code>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="section-card" id="section-7">
+        <div class="section-header">
+          <div class="section-number">07</div>
+          <h2 class="section-title">Push Notifications & Messaging</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            With your permission (<code>android.permission.POST_NOTIFICATIONS</code> on Android 13+), we send push notifications via Firebase Cloud Messaging (FCM). Notifications inform you about:
+          </p>
+          <ul>
+            <li>New chapters published for stories on your reading list.</li>
+            <li>Writer application approval status from the administrative editorial team.</li>
+            <li>Important security and policy announcements.</li>
+          </ul>
+          <p>
+            You can modify notification preferences or turn off push notifications entirely at any time in your device settings under <code>Settings &rarr; Apps &rarr; Novels Destiny &rarr; Notifications</code>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 8 -->
+      <section class="section-card" id="section-8">
+        <div class="section-header">
+          <div class="section-number">08</div>
+          <h2 class="section-title">PDF Manuscripts & Cover Images</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Novels Destiny provides writers with the capability to attach PDF versions of their chapters and upload custom novel covers.
+          </p>
+          <ul>
+            <li><strong>Photo/Storage Access:</strong> When you select a cover image or PDF document, the app uses Android's modern photo picker and system file picker. We do not inspect, browse, or read any unrelated files or private images stored on your device.</li>
+            <li><strong>Cloud Storage:</strong> Uploaded manuscripts and artwork are securely hosted on Supabase Cloud Storage with scoped read-access rules.</li>
+            <li><strong>Author Ownership:</strong> Authors retain complete intellectual property rights to the creative content they upload to Novels Destiny.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 9 -->
+      <section class="section-card" id="section-9">
+        <div class="section-header">
+          <div class="section-number">09</div>
+          <h2 class="section-title">Data Security & Storage Practices</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            We deploy multiple layers of administrative, technical, and physical security measures to safeguard your personal data:
+          </p>
+          <ul>
+            <li><strong>End-to-End Encryption in Transit:</strong> All data exchanged between the Novels Destiny mobile client and cloud servers is encrypted using modern TLS (Transport Layer Security) 1.2 / 1.3 protocol.</li>
+            <li><strong>Strict Role-Based Access Control:</strong> Only authorized administrative personnel have permission to review writer applications and moderate reported content.</li>
+            <li><strong>Firestore Security Rules:</strong> User documents, reading progress, and private drafts are protected by granular Firestore rules ensuring users can only read and write their own data.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 10 -->
+      <section class="section-card" id="section-10">
+        <div class="section-header">
+          <div class="section-number">10</div>
+          <h2 class="section-title">Account & Associated Data Deletion</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            In strict compliance with <strong>Google Play's User Data Policy</strong>, we believe every user has the absolute right to have their account and associated personal data erased completely.
+          </p>
+
+          <div class="callout info">
+            <div class="callout-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            </div>
+            <div class="callout-text">
+              <h4>Two Convenient Ways to Delete Your Account:</h4>
+              <p>
+                <strong>Method 1 (In-App Instant Deletion):</strong> Open Novels Destiny &rarr; Navigate to <strong>Profile</strong> &rarr; Tap <strong>Settings</strong> &rarr; Select <strong>Delete Account</strong> &rarr; Confirm.<br>
+                <strong>Method 2 (Web Request Portal):</strong> If you have already uninstalled the app or lost your mobile device, you do not need to reinstall it. Visit our public <a href="delete-account.html" style="color:var(--brand-accent); font-weight:700;">Account Deletion Request Portal</a> to submit a deletion request online.
+              </p>
+            </div>
+          </div>
+
+          <p>
+            Upon account deletion, your authentication record, user profile, reading history, bookmarks, favorites, and unpublished drafts are permanently erased from our production databases within <strong>7 business days</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 11 -->
+      <section class="section-card" id="section-11">
+        <div class="section-header">
+          <div class="section-number">11</div>
+          <h2 class="section-title">Children's Online Privacy Protection (COPPA)</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Novels Destiny is designed and intended for general adult and young adult audiences aged <strong>13 years and older</strong> (or 16 years and older in the European Economic Area).
+          </p>
+          <p>
+            We do not knowingly collect, solicit, or maintain personally identifiable information from children under the age of 13. If we discover that a user under 13 has registered an account or provided us with personal data, we will immediately delete that account and associated records from our servers. Parents or guardians who believe their child has registered an account can contact us directly at <code>novelsdestinyadmin@gmail.com</code> for immediate removal.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 12 -->
+      <section class="section-card" id="section-12">
+        <div class="section-header">
+          <div class="section-number">12</div>
+          <h2 class="section-title">GDPR & CCPA/CPRA Privacy Rights</h2>
+        </div>
+        <div class="section-body">
+          <p>Depending on your geographic residence, you may have specific statutory privacy rights:</p>
+          <ul>
+            <li><strong>European Economic Area & UK (GDPR / UK-GDPR):</strong> You have the right to request access to your personal data, rectify inaccuracies, request erasure ("Right to be Forgotten"), restrict processing, and receive an export of your data in a portable format.</li>
+            <li><strong>California Residents (CCPA / CPRA):</strong> You have the right to know what personal information is collected, request its deletion, and opt out of the sale or sharing of your personal data. <em>We do not sell your personal data.</em></li>
+          </ul>
+          <p>
+            To exercise any of these statutory rights, please email us with your registered account email at <code>novelsdestinyadmin@gmail.com</code>. We fulfill verified requests within 30 calendar days at no charge.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 13 -->
+      <section class="section-card" id="section-13">
+        <div class="section-header">
+          <div class="section-number">13</div>
+          <h2 class="section-title">Policy Updates & Contact Details</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            We may update our Privacy Policy periodically to reflect enhancements in the Novels Destiny platform, changes in statutory requirements, or Google Play developer policy revisions. Any material modifications will be announced via an in-app notice or push notification, and the "Effective Date" at the top of this document will be revised accordingly.
+          </p>
+
+          <div class="callout info" style="margin-top:1.5rem;">
+            <div class="callout-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="callout-text">
+              <h4>Contact the Novels Destiny Privacy & Editorial Team</h4>
+              <p>
+                <strong>Developer / Publisher:</strong> Mansoor Ahmed Butt<br>
+                <strong>Official Support & Privacy Email:</strong> <a href="mailto:novelsdestinyadmin@gmail.com" style="color:var(--brand-accent); font-weight:700;">novelsdestinyadmin@gmail.com</a><br>
+                <strong>Application Package:</strong> <code>com.example.novelsdestiny</code><br>
+                <strong>Response Window:</strong> Our support team addresses all privacy and account inquiries within 24 to 48 business hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Comprehensive Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Novels Destiny</h2>
+        <p>A digital haven for passionate readers and creative storytellers. Dive into captivating serialized novels, listen via audio dictation, and explore literary worlds.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal Documents</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy (Current)</a></li>
+          <li><a href="delete-account.html">Delete Account & Data</a></li>
+          <li><a href="#section-3">Microphone Audio Policy</a></li>
+          <li><a href="#section-6">AdMob Ads Disclosure</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Publisher & Help</h4>
+        <ul>
+          <li><a href="mailto:novelsdestinyadmin@gmail.com">Developer Support</a></li>
+          <li><a href="delete-account.html">Submit Deletion Form</a></li>
+          <li><a href="#section-12">GDPR / CCPA Inquiries</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Novels Destiny. Developed by Mansoor Ahmed Butt. All rights reserved.</p>
+      <p>Certified for Google Play Store Distribution</p>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript for Search, Theme Toggle, and TOC Spy -->
+  <script>
+    // Theme Switcher Logic
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const moonIcon = document.getElementById('moonIcon');
+    const sunIcon = document.getElementById('sunIcon');
+
+    function setTheme(theme) {
+      document.body.setAttribute('data-theme', theme);
+      localStorage.setItem('nd_theme', theme);
+      if (theme === 'dark') {
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'block';
+      } else {
+        moonIcon.style.display = 'block';
+        sunIcon.style.display = 'none';
+      }
+    }
+
+    // Initialize Theme
+    const savedTheme = localStorage.getItem('nd_theme') || 
+      (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    setTheme(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = document.body.getAttribute('data-theme');
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    // Real-time Policy Search
+    const searchInput = document.getElementById('policySearchInput');
+    const sections = document.querySelectorAll('.section-card');
+
+    function performSearch(query) {
+      const q = query.trim().toLowerCase();
+      sections.forEach(sec => {
+        if (!q) {
+          sec.style.display = '';
+          return;
+        }
+        const text = sec.innerText.toLowerCase();
+        if (text.includes(q)) {
+          sec.style.display = '';
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+    }
+
+    searchInput.addEventListener('input', (e) => {
+      performSearch(e.target.value);
+    });
+
+    function quickFilter(term) {
+      searchInput.value = term;
+      performSearch(term);
+      searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // Scrollspy for Sidebar Table of Contents
+    const tocLinks = document.querySelectorAll('.toc-link');
+    window.addEventListener('scroll', () => {
+      let currentSectionId = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 120;
+        if (window.scrollY >= top) {
+          currentSectionId = sec.getAttribute('id');
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
